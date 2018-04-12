@@ -8,17 +8,17 @@ function component() {
 	var h2 = createANode('h2', [ 'Hello Webpack' ]);
 
 	div1.appendChild(h2);
-	var button = createANode('button', 'clickMe');
+	var button = createANode('button', 'showMe');
 	button.onclick = () => {
 		var pTagPresent = document.getElementsByTagName('p');
 		console.log(!pTagPresent.length);
 		if (!pTagPresent.length) {
 			button.innerHTML = 'hideMe';
-			var p = createANode('p', 'Welcome to webpack ! Secret get resolved !');
+			var p = createANode('p', 'Welcome to webpack !! Secrets get resolved !');
 			div3.appendChild(p);
 		} else {
 			console.log(pTagPresent[0]);
-			button.innerHTML = 'clickMe';
+			button.innerHTML = 'showMe';
 			pTagPresent[0].parentNode.removeChild(pTagPresent[0]);
 		}
 	};
