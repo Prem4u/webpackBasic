@@ -17,4 +17,4 @@ npm build ->build without deployment
 
 npm start ->build and deploy the app to webpack-dev-server
 
-[For more details click](./BASIC.md) 
+[For more details click](docs/BASIC.md) 
