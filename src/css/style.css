@@ -1,1 +1,43 @@
-div {text-align:center;}
+
+h2 {
+	text-align:center;
+}
+img {
+	height: 150px;
+	
+}
+div.subdiv {
+	display: inline-block;
+}
+div.main {
+	/* //border: inset; */
+	background-color: white; 
+	height: 400px;
+	padding: 10px;
+	/* display : inline-block; */
+	/* background-image: url("../img/webpack-tuts.jpg");
+	background-repeat: no-repeat;
+    background-position: left top; */
+	
+	}
+p {
+	text-decoration: none;
+	font-style: italic;
+	font-size: medium;
+	color: green;
+	display: inline-block;
+}
+	
+a.button{
+	border: none;
+	color: #ffffff;
+	background-color : #0000ff;
+	width : 15px;
+	height: 13px;
+	padding : 5px;
+	
+}
+a:hover{
+	background-color : #000080;
+	}
+	

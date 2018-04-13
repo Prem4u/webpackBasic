@@ -2,14 +2,21 @@ import _ from 'lodash';
 
 function component() {
 	var div1 = createANode('div');
+	div1.className='main';
+
 	var div2 = createANode('div');
+	var img = createANode('img');
+	img.setAttribute("src", '../src/img/webpack-tuts.jpg')
+	div2.className= 'subdiv';
 	var div3 = createANode('div');
 
 	var h2 = createANode('h2', [ 'Hello Webpack' ]);
 
 	div1.appendChild(h2);
-	var button = createANode('button', 'showMe');
-	button.onclick = () => {
+	div2.appendChild(img);
+	var button = createANode('a', 'showMe');
+	button.className='button';
+	button.addEventListener('click', () => {
 		var pTagPresent = document.getElementsByTagName('p');
 		console.log(!pTagPresent.length);
 		if (!pTagPresent.length) {
@@ -21,7 +28,8 @@ function component() {
 			button.innerHTML = 'showMe';
 			pTagPresent[0].parentNode.removeChild(pTagPresent[0]);
 		}
-	};
+	});
+	
 	div2.appendChild(button);
 	div1.appendChild(div2);
 	div1.appendChild(div3);
