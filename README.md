@@ -1,4 +1,4 @@
-# webpackBasic (./basic.md)
+# webpackBasic (./BASIC.md)
 This is a simple example to understand webpack and its feature
 
 ## install the required package as dev dependencies
