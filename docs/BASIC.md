@@ -21,3 +21,5 @@ npm install --save-dev csv-loader xml-loader file-loader style-loader css-loader
 npm install --save-dev html-webpack-plugin clean-webpack-plugin 
 
 npm install --save lodash
+
+[details of webpack config](webpack.config.js)
