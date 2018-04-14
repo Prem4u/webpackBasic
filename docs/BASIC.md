@@ -22,4 +22,4 @@ npm install --save-dev html-webpack-plugin clean-webpack-plugin
 
 npm install --save lodash
 
-[details of webpack config](webpack.config.js)
+[details of webpack config](../webpack.config.js)
