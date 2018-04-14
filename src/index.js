@@ -5,17 +5,15 @@ import Data from './data/data.xml';
 
 function component() {
 	var div1 = createANode('div');
-	div1.className='main';
-
 	var div2 = createANode('div');
+	var div3 = createANode('div');
+	div1.className='main';
+	div2.className= 'img-class';
+	div3.className='last-div';
+	var h2 = createANode('h2', [ 'Hello Webpack2' ]);
+    div1.appendChild(h2);
 	var img = new Image();
 	img.src=Icon;
-	div2.className= 'subdiv';
-	var div3 = createANode('div');
-	div2.className='subdiv1';
-	var h2 = createANode('h2', [ 'Hello Webpack2' ]);
-
-	div1.appendChild(h2);
 	div2.appendChild(img);
 	var button = createANode('a', 'showMe');
 	button.className='button';
@@ -32,7 +30,6 @@ function component() {
 			pTagPresent[0].parentNode.removeChild(pTagPresent[0]);
 		}
 	});
-	
 	div2.appendChild(button);
 	div1.appendChild(div2);
 	div1.appendChild(div3);

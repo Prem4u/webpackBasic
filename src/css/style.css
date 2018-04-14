@@ -3,15 +3,21 @@ h2 {
 	text-align:center;
 }
 img {
-	top: 0px;
+	
 	height: 150px;
 	
 }
-div.subdiv {
+div.img-class {
+	position : relative;
 	display: inline-block;
+	left : 100px;
+	top: 10px;
 }
-div.subdiv1 {
+div.last-div {
 	display: inline-block;
+	position : absolute;
+	top: 250px;
+	left: 100px;
 }
 div.main {
 	/* //border: inset; */
