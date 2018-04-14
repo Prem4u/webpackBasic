@@ -3,10 +3,14 @@ h2 {
 	text-align:center;
 }
 img {
+	top: 0px;
 	height: 150px;
 	
 }
 div.subdiv {
+	display: inline-block;
+}
+div.subdiv1 {
 	display: inline-block;
 }
 div.main {
@@ -24,7 +28,7 @@ p {
 	text-decoration: none;
 	font-style: italic;
 	font-size: medium;
-	color: green;
+	color: #800040;
 	display: inline-block;
 }
 	
@@ -38,6 +42,6 @@ a.button{
 	
 }
 a:hover{
-	background-color : #000080;
+	background-color : #408080;
 	}
 	

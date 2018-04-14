@@ -5,11 +5,7 @@ This is a simple example to understand webpack and its feature
 
 npm init
 
-npm install --save-dev webpack webpack-cli
-
-## install app dependencies
-
-npm install --save lodash
+npm install --save-dev webpack webpack-cli webpack-server
 
 ## command to build and run 
 

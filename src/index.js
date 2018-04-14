@@ -1,15 +1,18 @@
 import _ from 'lodash';
+import './css/style.css';
+import Icon from  './img/webpack-tuts.jpg';
+import Data from './data/data.xml';
 
 function component() {
 	var div1 = createANode('div');
 	div1.className='main';
 
 	var div2 = createANode('div');
-	var img = createANode('img');
-	img.setAttribute("src", '../src/img/webpack-tuts.jpg')
+	var img = new Image();
+	img.src=Icon;
 	div2.className= 'subdiv';
 	var div3 = createANode('div');
-
+	div2.className='subdiv1';
 	var h2 = createANode('h2', [ 'Hello Webpack' ]);
 
 	div1.appendChild(h2);
@@ -21,7 +24,7 @@ function component() {
 		console.log(!pTagPresent.length);
 		if (!pTagPresent.length) {
 			button.innerHTML = 'hideMe';
-			var p = createANode('p', 'Welcome to webpack !! Secrets get resolved !');
+			var p = createANode('p', 'Welcome to webpack2 !! Secrets get resolved !');
 			div3.appendChild(p);
 		} else {
 			console.log(pTagPresent[0]);
@@ -49,3 +52,7 @@ function createANode(NodeName, text) {
 
 
 document.body.appendChild(component());
+
+console.log("xml data loaded :"+JSON.stringify(Data));
+
+
