@@ -13,7 +13,7 @@ function component() {
 	div2.className= 'subdiv';
 	var div3 = createANode('div');
 	div2.className='subdiv1';
-	var h2 = createANode('h2', [ 'Hello Webpack' ]);
+	var h2 = createANode('h2', [ 'Hello Webpack2' ]);
 
 	div1.appendChild(h2);
 	div2.appendChild(img);
