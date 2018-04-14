@@ -14,6 +14,8 @@
 4. xml-loader   => for loading xml data
 5. file-loader  => for loading jpg|png|svg files/images
 
+[details of webpack config](../webpack.config.js)
+
 ## npm command to install dev dependency 
 
 npm install --save-dev csv-loader xml-loader file-loader style-loader css-loader
@@ -21,7 +23,5 @@ npm install --save-dev csv-loader xml-loader file-loader style-loader css-loader
 npm install --save-dev html-webpack-plugin clean-webpack-plugin 
 
 npm install --save lodash
-
-[details of webpack config](../webpack.config.js)
 
 [details of package json config for npm](../package.json)
